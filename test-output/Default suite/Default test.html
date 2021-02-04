@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 04 20:30:04 CET 2021</td>
+<td>Started on:</td><td>Thu Feb 04 20:36:15 CET 2021</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23210 ms)</td>
+<tr><td>Total time:</td><td>46 seconds (46225 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,20 +76,97 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='tests.DemoTests.DemoTest()'><b>DemoTest</b><br>Test class: tests.DemoTests</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=88.0.4324.104)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;DESKTOP-UR964I2&apos;, ip: &apos;10.64.154.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
 Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00CCC0C3+3326147]
+	Ordinal0 [0x00BB0851+2164817]
+	Ordinal0 [0x00A37298+619160]
+	Ordinal0 [0x00A2BD04+572676]
+	Ordinal0 [0x00A2BA18+571928]
+	Ordinal0 [0x00A2B0C1+569537]
+	Ordinal0 [0x00A2A421+566305]
+	Ordinal0 [0x00A2A815+567317]
+	Ordinal0 [0x00A2A135+565557]
+	Ordinal0 [0x00A338B1+604337]
+	Ordinal0 [0x00A2A0F1+565489]
+	Ordinal0 [0x00A2AEA2+568994]
+	Ordinal0 [0x00A2A421+566305]
+	Ordinal0 [0x00A2A815+567317]
+	Ordinal0 [0x00A2A135+565557]
+	Ordinal0 [0x00A31D2C+597292]
+	Ordinal0 [0x00A2A0F1+565489]
+	Ordinal0 [0x00A2AEA2+568994]
+	Ordinal0 [0x00A2A421+566305]
+	Ordinal0 [0x00A2A815+567317]
+	Ordinal0 [0x00A2A135+565557]
+	Ordinal0 [0x00A2FE62+589410]
+	Ordinal0 [0x00A2A0F1+565489]
+	Ordinal0 [0x00A2AEA2+568994]
+	Ordinal0 [0x00A2A421+566305]
+	Ordinal0 [0x00A2A815+567317]
+	Ordinal0 [0x00A2A135+565557]
+	Ordinal0 [0x00A2F075+585845]
+	Ordinal0 [0x00A2A0F1+565489]
+	Ordinal0 [0x00A2AEA2+568994]
+	Ordinal0 [0x00A2A421+566305]
+	Ordinal0 [0x00A2A815+567317]
+	Ordinal0 [0x00A2A135+565557]
+	Ordinal0 [0x00A26776+550774]
+	Ordinal0 [0x00A2A0F1+565489]
+	Ordinal0 [0x00A29F13+565011]
+	Ordinal0 [0x00A29D07+564487]
+	Ordinal0 [0x00A382C0+623296]
+	Ordinal0 [0x009D6BDD+224221]
+	Ordinal0 [0x009D5CAC+220332]
+	Ordinal0 [0x009D189B+202907]
+	Ordinal0 [0x009B3DF4+81396]
+	Ordinal0 [0x009B4DEE+85486]
+	Ordinal0 [0x009B4D79+85369]
+	Ordinal0 [0x00BC85DC+2262492]
+	GetHandleVerifier [0x00E52874+1487204]
+	GetHandleVerifier [0x00E523CD+1486013]
+	GetHandleVerifier [0x00E5A368+1518680]
+	GetHandleVerifier [0x00E52F4E+1488958]
+	Ordinal0 [0x00BBED0D+2223373]
+	Ordinal0 [0x00BCA12B+2269483]
+	Ordinal0 [0x00BCA26F+2269807]
+	Ordinal0 [0x00BDECB8+2354360]
+	BaseThreadInitThunk [0x7718FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778A75F4+228]
+	RtlGetAppContainerNamedObjectPath [0x778A75C4+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at tests.DemoTests.DemoTest(DemoTests.java:16)
+	at tests.DemoTests.DemoTest(DemoTests.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -118,30 +195,98 @@ Driver info: driver.version: ChromeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:7008/status] to be available after 20145 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 37 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.util.concurrent.FutureTask.get(Unknown Source)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 38 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace270056930", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace270056930'><pre>org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+</pre></div><a href='#' onClick='toggleBox("stack-trace1595938139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1595938139'><pre>org.openqa.selenium.SessionNotCreatedException: session not created
+from disconnected: received Inspector.detached event
+  (Session info: chrome=88.0.4324.104)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
 System info: host: &apos;DESKTOP-UR964I2&apos;, ip: &apos;10.64.154.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_271&apos;
 Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
-	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00CCC0C3+3326147]
+	Ordinal0 [0x00BB0851+2164817]
+	Ordinal0 [0x00A37298+619160]
+	Ordinal0 [0x00A2BD04+572676]
+	Ordinal0 [0x00A2BA18+571928]
+	Ordinal0 [0x00A2B0C1+569537]
+	Ordinal0 [0x00A2A421+566305]
+	Ordinal0 [0x00A2A815+567317]
+	Ordinal0 [0x00A2A135+565557]
+	Ordinal0 [0x00A338B1+604337]
+	Ordinal0 [0x00A2A0F1+565489]
+	Ordinal0 [0x00A2AEA2+568994]
+	Ordinal0 [0x00A2A421+566305]
+	Ordinal0 [0x00A2A815+567317]
+	Ordinal0 [0x00A2A135+565557]
+	Ordinal0 [0x00A31D2C+597292]
+	Ordinal0 [0x00A2A0F1+565489]
+	Ordinal0 [0x00A2AEA2+568994]
+	Ordinal0 [0x00A2A421+566305]
+	Ordinal0 [0x00A2A815+567317]
+	Ordinal0 [0x00A2A135+565557]
+	Ordinal0 [0x00A2FE62+589410]
+	Ordinal0 [0x00A2A0F1+565489]
+	Ordinal0 [0x00A2AEA2+568994]
+	Ordinal0 [0x00A2A421+566305]
+	Ordinal0 [0x00A2A815+567317]
+	Ordinal0 [0x00A2A135+565557]
+	Ordinal0 [0x00A2F075+585845]
+	Ordinal0 [0x00A2A0F1+565489]
+	Ordinal0 [0x00A2AEA2+568994]
+	Ordinal0 [0x00A2A421+566305]
+	Ordinal0 [0x00A2A815+567317]
+	Ordinal0 [0x00A2A135+565557]
+	Ordinal0 [0x00A26776+550774]
+	Ordinal0 [0x00A2A0F1+565489]
+	Ordinal0 [0x00A29F13+565011]
+	Ordinal0 [0x00A29D07+564487]
+	Ordinal0 [0x00A382C0+623296]
+	Ordinal0 [0x009D6BDD+224221]
+	Ordinal0 [0x009D5CAC+220332]
+	Ordinal0 [0x009D189B+202907]
+	Ordinal0 [0x009B3DF4+81396]
+	Ordinal0 [0x009B4DEE+85486]
+	Ordinal0 [0x009B4D79+85369]
+	Ordinal0 [0x00BC85DC+2262492]
+	GetHandleVerifier [0x00E52874+1487204]
+	GetHandleVerifier [0x00E523CD+1486013]
+	GetHandleVerifier [0x00E5A368+1518680]
+	GetHandleVerifier [0x00E52F4E+1488958]
+	Ordinal0 [0x00BBED0D+2223373]
+	Ordinal0 [0x00BCA12B+2269483]
+	Ordinal0 [0x00BCA26F+2269807]
+	Ordinal0 [0x00BDECB8+2354360]
+	BaseThreadInitThunk [0x7718FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x778A75F4+228]
+	RtlGetAppContainerNamedObjectPath [0x778A75C4+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
 	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
-	at tests.DemoTests.DemoTest(DemoTests.java:16)
+	at tests.DemoTests.DemoTest(DemoTests.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -170,17 +315,8 @@ Driver info: driver.version: ChromeDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:7008/status] to be available after 20145 ms
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
-	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
-	... 37 more
-Caused by: java.util.concurrent.TimeoutException
-	at java.util.concurrent.FutureTask.get(Unknown Source)
-	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
-	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
-	... 38 more
 </pre></div></td>
-<td>22</td>
+<td>45</td>
 <td>tests.DemoTests@1c3a4799</td></tr>
 </table><p>
 </body>
